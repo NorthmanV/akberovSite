@@ -667,12 +667,12 @@ section h2 {
         flex-direction: column;
         padding: 0;
         text-align: center;
-        margin-top: -16rem;
+        margin-top: 2rem;
     }
 
     .hero__image {
         order: -1;
-        margin-bottom: -2rem;
+        margin-bottom: -1rem;
         width: 100%;
         max-width: 300px;
         margin-left: auto;
