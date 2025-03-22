@@ -1,24 +1,26 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>iOS Developer Portfolio</title>
+    <title>Ruslan Akberov - iOS Developer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;700&family=Outfit:wght@400;500;600;700&family=Orbitron:wght@400;500;600;700&family=Syncopate:wght@400;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
     <header class="header">
         <nav class="nav">
-            <div class="nav__logo">Portfolio</div>
+            <div class="nav__logo">Ruslan Akberov</div>
             <button class="nav__toggle" aria-label="Toggle menu">
                 <i class="fas fa-bars"></i>
             </button>
             <ul class="nav__menu">
-                <li><a href="#home">Главная</a></li>
-                <li><a href="#about">Обо мне</a></li>
-                <li><a href="#projects">Проекты</a></li>
-                <li><a href="#contact">Контакты</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="apps.html">Mobile Apps</a></li>
+                <li><a href="privacy.html">Privacy Policy</a></li>
             </ul>
         </nav>
     </header>
@@ -26,77 +28,52 @@
     <main>
         <section id="home" class="hero">
             <div class="hero__content">
-                <h1>iOS Разработчик</h1>
-                <p>Создаю качественные приложения для iOS</p>
-                <a href="#projects" class="btn">Мои проекты</a>
-            </div>
-        </section>
-
-        <section id="about" class="about">
-            <div class="container">
-                <h2>Обо мне</h2>
-                <div class="about__content">
-                    <div class="about__text">
-                        <p>Привет! Я iOS разработчик с опытом создания нативных приложений для iPhone и iPad. Специализируюсь на разработке пользовательских интерфейсов и оптимизации производительности.</p>
-                        <div class="skills">
-                            <h3>Навыки</h3>
-                            <ul>
-                                <li>Swift</li>
-                                <li>SwiftUI</li>
-                                <li>UIKit</li>
-                                <li>Core Data</li>
-                                <li>Git</li>
-                            </ul>
+                <div class="hero__text">
+                    <div class="hero__greeting">Welcome</div>
+                    <h1>I'm an iOS Developer</h1>
+                    <p>With over 5 years of commercial development experience since 2018, I've had the opportunity to work across diverse environments - from innovative startups to large enterprise companies. My journey in iOS development goes beyond just coding; I'm passionate about creating complete, user-centric products. This drives me to continuously expand my expertise in product ownership, marketing, and design, ensuring that every app I develop delivers exceptional value and user experience.</p>
+                    <div class="hero__skills">
+                        <div class="skill-item">
+                            <i class="fab fa-swift"></i>
+                            <span>SwiftUI</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-mobile-alt"></i>
+                            <span>UIKit</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-database"></i>
+                            <span>SwiftData</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-code-branch"></i>
+                            <span>Concurrency</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-stream"></i>
+                            <span>Combine</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-project-diagram"></i>
+                            <span>RxSwift</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fab fa-app-store-ios"></i>
+                            <span>App Store Connect</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fab fa-figma"></i>
+                            <span>Figma</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-ad"></i>
+                            <span>Google Ads</span>
                         </div>
                     </div>
+                    <a href="apps.html" class="btn">View My Apps</a>
                 </div>
-            </div>
-        </section>
-
-        <section id="projects" class="projects">
-            <div class="container">
-                <h2>Мои проекты</h2>
-                <div class="projects__grid">
-                    <div class="project-card">
-                        <img src="images/project1.jpg" alt="Проект 1">
-                        <h3>Название проекта 1</h3>
-                        <p>Описание проекта и использованные технологии</p>
-                        <a href="#" class="btn">Подробнее</a>
-                    </div>
-                    <div class="project-card">
-                        <img src="images/project2.jpg" alt="Проект 2">
-                        <h3>Название проекта 2</h3>
-                        <p>Описание проекта и использованные технологии</p>
-                        <a href="#" class="btn">Подробнее</a>
-                    </div>
-                    <div class="project-card">
-                        <img src="images/project3.jpg" alt="Проект 3">
-                        <h3>Название проекта 3</h3>
-                        <p>Описание проекта и использованные технологии</p>
-                        <a href="#" class="btn">Подробнее</a>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="contact" class="contact">
-            <div class="container">
-                <h2>Контакты</h2>
-                <div class="contact__content">
-                    <div class="contact__info">
-                        <div class="contact__item">
-                            <i class="fas fa-envelope"></i>
-                            <a href="mailto:your.email@example.com">your.email@example.com</a>
-                        </div>
-                        <div class="contact__item">
-                            <i class="fab fa-github"></i>
-                            <a href="https://github.com/yourusername" target="_blank">GitHub</a>
-                        </div>
-                        <div class="contact__item">
-                            <i class="fab fa-linkedin"></i>
-                            <a href="https://linkedin.com/in/yourusername" target="_blank">LinkedIn</a>
-                        </div>
-                    </div>
+                <div class="hero__image">
+                    <img src="images/me.jpg" alt="Ruslan Akberov">
                 </div>
             </div>
         </section>
@@ -104,7 +81,7 @@
 
     <footer class="footer">
         <div class="container">
-            <p>&copy; 2024 iOS Developer Portfolio. Все права защищены.</p>
+            <p>&copy; 2024 Ruslan Akberov. All rights reserved.</p>
         </div>
     </footer>
 
