@@ -50,7 +50,6 @@ main {
         0 2px 20px rgba(79, 70, 229, 0.15),
         0 0 0 1px rgba(79, 70, 229, 0.1);
     z-index: 1000;
-    position: relative;
 }
 
 .header::before {
@@ -121,6 +120,7 @@ main {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     letter-spacing: -0.5px;
+    text-decoration: none;
 }
 
 .nav__menu {
@@ -399,7 +399,7 @@ section::after {
 section h2 {
     font-family: 'Space Grotesk', sans-serif;
     text-align: center;
-    font-size: 2.8rem;
+    font-size: 2.5rem;
     margin-bottom: 3rem;
     background: linear-gradient(135deg, var(--primary-color), var(--accent-color));
     -webkit-background-clip: text;
@@ -572,14 +572,16 @@ section h2 {
 /* Apps Section */
 .apps {
     flex: 1;
-    padding: 0;
     margin: 0;
     background: linear-gradient(135deg, var(--bg-darker), var(--bg-dark));
 }
 
+.apps .container {
+    padding-top: 5rem;
+}
+
 .apps h2 {
     margin: 0 0 2rem;
-    padding-top: 5rem;
 }
 
 .apps__grid {
@@ -704,14 +706,19 @@ section h2 {
 .privacy__content {
     max-width: 800px;
     margin: 0 auto;
-    padding: 2rem 0;
+    padding: 0;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    min-height: calc(100vh - 60px);
+    padding-top: 5rem;
 }
 
 .privacy__content h2 {
     font-family: 'Space Grotesk', sans-serif;
     color: var(--primary-color);
-    margin: 2rem 0 1rem;
-    font-size: 2rem;
+    margin: 0 0 1rem;
+    font-size: 2.5rem;
     text-align: left;
     background: linear-gradient(135deg, var(--primary-color), var(--accent-color));
     -webkit-background-clip: text;
@@ -754,8 +761,8 @@ section h2 {
 
     .nav__menu {
         display: none;
-        position: absolute;
-        top: 100%;
+        position: fixed;
+        top: 60px;
         left: 0;
         width: 100%;
         background: linear-gradient(135deg, var(--bg-darker), var(--bg-dark));
@@ -769,6 +776,7 @@ section h2 {
         opacity: 0;
         transition: all 0.3s ease;
         backdrop-filter: blur(10px);
+        z-index: 999;
     }
 
     .nav__menu::before {
@@ -885,7 +893,7 @@ section h2 {
     section {
         padding: 5rem 0 3rem;
         position: relative;
-        margin-top: 4rem;
+        margin-top: 0;
         margin-bottom: 0;
     }
 
@@ -958,13 +966,12 @@ section h2 {
         font-size: 0.9rem;
     }
 
-    .apps {
-        padding: 0;
-        margin: 0;
+    .apps .container {
+        padding: 2rem;
     }
 
     .apps h2 {
-        padding-top: 3rem;
+        margin-bottom: 2rem;
     }
 
     .apps__grid {
@@ -991,6 +998,15 @@ section h2 {
         height: 200px;
         border-radius: 30px;
         -webkit-border-radius: 30px;
+    }
+
+    .contacts__content {
+        padding: 2rem;
+    }
+
+    .contacts__content h2 {
+        font-size: 2rem;
+        margin-bottom: 2rem;
     }
 }
 
@@ -1049,3 +1065,82 @@ section h2 {
         opacity: 0.7;
     }
 } 
+
+/* Contacts Page */
+
+.contacts__content {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    min-height: calc(100vh - 60px);
+    padding-top: 5rem;
+}
+
+.contacts__content h2 {
+    color: var(--primary-color);
+    margin-bottom: 3rem;
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 2.5rem;
+    background: linear-gradient(135deg, var(--primary-color), var(--accent-color));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.social-link {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem 2rem;
+    background: transparent;
+    color: var(--primary-color);
+    text-decoration: none;
+    border-radius: 30px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    border: 2px solid var(--primary-color);
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    letter-spacing: 0.5px;
+    position: relative;
+    z-index: 1;
+}
+
+.social-link i {
+    font-size: 1.5rem;
+}
+
+.social-link:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 0 30px rgba(79, 70, 229, 0.4);
+    border-color: var(--accent-color);
+    color: var(--accent-color);
+}
+
+@media (max-width: 1060px) {
+    .contacts__content {
+        padding: 2rem;
+    }
+
+    .contacts__content h2 {
+        font-size: 2rem;
+        margin-bottom: 2rem;
+    }
+
+    .social-links {
+        gap: 1rem;
+    }
+
+    .social-link {
+        width: 100%;
+        justify-content: center;
+    }
+}
