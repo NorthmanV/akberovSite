@@ -394,6 +394,7 @@ section::after {
     background-position: 0 0, 12px 12px;
     z-index: 0;
     opacity: 1;
+    pointer-events: none;
 }
 
 section h2 {
@@ -617,6 +618,10 @@ section h2 {
     background: linear-gradient(135deg, rgba(66, 75, 85, 0.2), rgba(66, 75, 85, 0.2));
 }
 
+.app-card:nth-child(4) {
+    background: linear-gradient(135deg, rgba(200, 120, 120, 0.2), rgba(200, 120, 120, 0.2));
+}
+
 .app-card img {
     width: 150px;
     height: 150px;
@@ -718,7 +723,7 @@ section h2 {
 .privacy__content h2 {
     font-family: 'Space Grotesk', sans-serif;
     color: var(--primary-color);
-    margin: 0 0 1rem;
+    margin: 0 0 0.5rem;
     font-size: 2.5rem;
     text-align: left;
     background: linear-gradient(135deg, var(--primary-color), var(--accent-color));
@@ -727,10 +732,23 @@ section h2 {
     letter-spacing: -0.3px;
 }
 
+.privacy__content h3 {
+    font-family: 'Space Grotesk', sans-serif;
+    color: var(--text-secondary);
+    margin: 0 0 0.2rem;
+    font-size: 1.5rem;
+    text-align: left;
+    background: linear-gradient(135deg, var(--primary-color), var(--accent-color));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    letter-spacing: -0.3px;
+    padding-top: 1rem;
+}
+
 .privacy__content p {
     font-family: 'Plus Jakarta Sans', sans-serif;
     color: var(--text-secondary);
-    margin-bottom: 1.5rem;
+    margin-bottom: 1rem;
     letter-spacing: 0.2px;
 }
 
@@ -752,6 +770,22 @@ section h2 {
     color: var(--primary-color);
     position: absolute;
     left: 0;
+}
+
+.privacy__content a {
+    color: #675EEE;
+    text-decoration: underline;
+    font-weight: 500;
+    transition: color 0.2s ease;
+}
+
+.privacy__content a:hover {
+    color: #C87878;
+    text-decoration: none;
+}
+
+.privacy__content a:visited {
+    color: #72708a;
 }
 
 /* Responsive Design */
