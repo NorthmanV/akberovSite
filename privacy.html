@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
     <title>Privacy Policy - iOS Developer Portfolio</title>
     <link rel="stylesheet" href="css/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -12,14 +12,14 @@
     <header class="header">
         <nav class="nav">
             <a href="index.html" class="nav__logo">Ruslan Akberov</a>
-            <ul class="nav__menu">
+            <ul class="nav__menu" id="nav-menu">
                 <li><a href="index.html">HOME</a></li>
                 <li><a href="apps.html">MOBILE APPS</a></li>
                 <li><a href="privacy.html">PRIVACY POLICY</a></li>
                 <li><a href="contacts.html">CONTACTS</a></li>
             </ul>
-            <button class="nav__toggle">
-                <i class="fas fa-bars"></i>
+            <button class="nav__toggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="nav-menu">
+                <i class="fas fa-bars" aria-hidden="true"></i>
             </button>
         </nav>
     </header>

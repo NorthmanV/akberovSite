@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
     <title>Ruslan Akberov - iOS Developer</title>
     <link rel="stylesheet" href="css/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -12,14 +12,14 @@
     <header class="header">
         <nav class="nav">
             <a href="index.html" class="nav__logo">Ruslan Akberov</a>
-            <ul class="nav__menu">
+            <ul class="nav__menu" id="nav-menu">
                 <li><a href="index.html">HOME</a></li>
                 <li><a href="apps.html">MOBILE APPS</a></li>
                 <li><a href="privacy.html">PRIVACY POLICY</a></li>
                 <li><a href="contacts.html">CONTACTS</a></li>
             </ul>
-            <button class="nav__toggle">
-                <i class="fas fa-bars"></i>
+            <button class="nav__toggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="nav-menu">
+                <i class="fas fa-bars" aria-hidden="true"></i>
             </button>
         </nav>
     </header>
@@ -33,46 +33,46 @@
                     <p>Since 2018, I’ve been crafting native iOS applications across diverse environments — from fast-paced startups to large-scale enterprises. My approach goes beyond writing clean Swift and SwiftUI code: I build complete, user-centric products from concept to App Store launch. Combining technical engineering with expertise in product ownership, UI/UX design, and marketing, I focus on creating apps that deliver real value and seamless user experiences.</p>
                     <div class="hero__skills">
                         <div class="skill-item">
-                            <i class="fab fa-swift"></i>
+                            <i class="fab fa-swift" aria-hidden="true"></i>
                             <span>SwiftUI</span>
                         </div>
                         <div class="skill-item">
-                            <i class="fas fa-mobile-alt"></i>
+                            <i class="fas fa-mobile-alt" aria-hidden="true"></i>
                             <span>UIKit</span>
                         </div>
                         <div class="skill-item">
-                            <i class="fas fa-database"></i>
+                            <i class="fas fa-database" aria-hidden="true"></i>
                             <span>SwiftData</span>
                         </div>
                         <div class="skill-item">
-                            <i class="fas fa-code-branch"></i>
+                            <i class="fas fa-code-branch" aria-hidden="true"></i>
                             <span>Concurrency</span>
                         </div>
                         <div class="skill-item">
-                            <i class="fas fa-stream"></i>
+                            <i class="fas fa-stream" aria-hidden="true"></i>
                             <span>Combine</span>
                         </div>
                         <div class="skill-item">
-                            <i class="fas fa-project-diagram"></i>
+                            <i class="fas fa-project-diagram" aria-hidden="true"></i>
                             <span>RxSwift</span>
                         </div>
                         <div class="skill-item">
-                            <i class="fab fa-app-store-ios"></i>
+                            <i class="fab fa-app-store-ios" aria-hidden="true"></i>
                             <span>App Store Connect</span>
                         </div>
                         <div class="skill-item">
-                            <i class="fab fa-figma"></i>
+                            <i class="fab fa-figma" aria-hidden="true"></i>
                             <span>Figma</span>
                         </div>
                         <div class="skill-item">
-                            <i class="fas fa-ad"></i>
+                            <i class="fas fa-ad" aria-hidden="true"></i>
                             <span>Google Ads</span>
                         </div>
                     </div>
                     <a href="apps.html" class="btn">View My Apps</a>
                 </div>
                 <div class="hero__image">
-                    <img src="images/me.jpg" alt="Ruslan Akberov">
+                    <img src="images/me.webp" srcset="images/me-400.webp 400w, images/me.webp 800w" sizes="(max-width: 480px) 250px, (max-width: 1060px) 300px, 400px" alt="Ruslan Akberov" width="400" height="486" fetchpriority="high">
                 </div>
             </div>
         </section>

@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
     <title>Contacts - Ruslan Akberov</title>
     <link rel="stylesheet" href="css/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -12,14 +12,14 @@
     <header class="header">
         <nav class="nav">
             <a href="index.html" class="nav__logo">Ruslan Akberov</a>
-            <ul class="nav__menu">
+            <ul class="nav__menu" id="nav-menu">
                 <li><a href="index.html">HOME</a></li>
                 <li><a href="apps.html">MOBILE APPS</a></li>
                 <li><a href="privacy.html">PRIVACY POLICY</a></li>
                 <li><a href="contacts.html">CONTACTS</a></li>
             </ul>
-            <button class="nav__toggle">
-                <i class="fas fa-bars"></i>
+            <button class="nav__toggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="nav-menu">
+                <i class="fas fa-bars" aria-hidden="true"></i>
             </button>
         </nav>
     </header>
@@ -30,16 +30,16 @@
                 <div class="contacts__content">
                     <h2>Get in Touch</h2>
                     <div class="social-links">
-                        <a href="https://www.linkedin.com/in/ruslan-akberov-45233794/" target="_blank" class="social-link">
-                            <i class="fab fa-linkedin"></i>
+                        <a href="https://www.linkedin.com/in/ruslan-akberov-45233794/" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="LinkedIn profile">
+                            <i class="fab fa-linkedin" aria-hidden="true"></i>
                             <span>LinkedIn</span>
                         </a>
-                        <a href="https://github.com/NorthmanV" target="_blank" class="social-link">
-                            <i class="fab fa-github"></i>
+                        <a href="https://github.com/NorthmanV" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="GitHub profile">
+                            <i class="fab fa-github" aria-hidden="true"></i>
                             <span>GitHub</span>
                         </a>
-                        <a href="https://t.me/ruslanak5" target="_blank" class="social-link">
-                            <i class="fab fa-telegram"></i>
+                        <a href="https://t.me/ruslanak5" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Telegram profile">
+                            <i class="fab fa-telegram" aria-hidden="true"></i>
                             <span>Telegram</span>
                         </a>
                     </div>
