@@ -15,6 +15,7 @@
             <ul class="nav__menu" id="nav-menu">
                 <li><a href="index.html">HOME</a></li>
                 <li><a href="apps.html">MOBILE APPS</a></li>
+                <li><a href="blog.html">BLOG</a></li>
                 <li><a href="privacy.html">PRIVACY POLICY</a></li>
                 <li><a href="contacts.html">CONTACTS</a></li>
             </ul>
@@ -72,7 +73,10 @@
                     <a href="apps.html" class="btn">View My Apps</a>
                 </div>
                 <div class="hero__image">
-                    <img src="images/me.webp" srcset="images/me-400.webp 400w, images/me.webp 800w" sizes="(max-width: 480px) 250px, (max-width: 1060px) 300px, 400px" alt="Ruslan Akberov" width="400" height="486" fetchpriority="high">
+                    <picture>
+                        <source type="image/webp" srcset="images/me-400.webp 400w, images/me.webp 800w" sizes="(max-width: 480px) 250px, (max-width: 1060px) 300px, 400px">
+                        <img src="images/me.jpg" alt="Ruslan Akberov" width="400" height="486" fetchpriority="high">
+                    </picture>
                 </div>
             </div>
         </section>
